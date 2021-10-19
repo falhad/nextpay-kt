@@ -51,7 +51,7 @@ repositories {
 
 ```groovy
 dependencies {
-    implementation 'dev.falhad:nextpay:1.0.1'
+    implementation 'dev.falhad:nextpay:1.0.2'
 }
 ```
 
