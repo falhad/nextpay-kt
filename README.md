@@ -58,7 +58,7 @@ dependencies {
 ## 🚀 Basic Usage
 
 If you are not familiar with the transaction processing flow its good to
-see [Nextpay.ir Docs](https://github.com/falhad/nextpay-kt/wiki) first.
+see [Nextpay.ir documents](https://nextpay.org/nx/docs) first.
 
 ### Initialize Nextpay-KT
 
