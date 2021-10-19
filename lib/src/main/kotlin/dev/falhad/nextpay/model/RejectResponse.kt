@@ -14,7 +14,7 @@ import kotlinx.serialization.Serializable
  * @param customJsonFields    اطلاعات دلخواه	json	{ "productName":"Shoes752" , "id":52 }
  */
 @Serializable
-data class VerifyResponse(
+data class RejectResponse(
     @SerialName("code") val code: Int,
     @SerialName("amount") val amount: Int,
     @SerialName("order_id") var orderId: String,
@@ -23,13 +23,11 @@ data class VerifyResponse(
     @SerialName("custom") var customJsonFields: String? = null,
     @SerialName("Shaparak_Ref_Id") var shaparakRefId: String,
 ) {
-
-
     /**
-     * تراکنش با موفقیت پرداخت و تایید شده است.
-     * این متد برای تایید تراکنش کاربرد دارد.
+     * تراکنش با موفقیت برگشت خورده است
+     * این متد برای لغو و عودت تراکنش کاربرد دارد.
      */
-    fun verified(): Boolean {
-        return code == 0
+    fun rejected(): Boolean {
+        return code == -90
     }
 }

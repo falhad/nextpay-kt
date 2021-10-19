@@ -11,7 +11,9 @@ data class CheckoutResponse(
     @SerialName("code") val code: Int,
     @SerialName("message") val message: String
 ) {
-    fun ok(): Boolean {
-        return code == 200
-    }
+
+    /**
+     *      *  اگر مقدار code برابر با 200 باشد ، یعنی عملیات با موفقیت انجام شده و درخواست شما ثبت شده است. در غیر اینصورت درخواست شامل خطا بوده است .
+     */
+    fun ok(): Boolean = code == 200
 }

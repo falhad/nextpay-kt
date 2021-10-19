@@ -15,9 +15,13 @@ data class TokenResponse(
 ) {
 
     /**
-     * 2- هدایت کاربر به صفحه بانک
-     *
-     * در این مرحله فقط کافیست کاربر را به آدرس مذکور ریدایرکت و هدایت کنیم .
+     * نشان دهنده این است که توکن تراکنش با موفقیت ساخته شده است.
+     */
+    fun tokenGenerated(): Boolean = code == -1
+
+    /**
+     * لینک هدایت کاربر به صفحه بانک
      */
     fun paymentURL(): String = "$URL_PAYMENT_URL/${this.transId}"
+
 }
