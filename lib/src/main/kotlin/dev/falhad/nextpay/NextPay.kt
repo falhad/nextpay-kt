@@ -42,6 +42,7 @@ class NextPay(private val apiKey: String, logging: Boolean = false) {
                 prettyPrint = true
                 isLenient = true
                 ignoreUnknownKeys = true
+                encodeDefaults = true
             })
         }
 

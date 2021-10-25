@@ -1,6 +1,11 @@
+<p align="center">
+  <a href="https://nextpay.org/">
+    <img src="https://nextpay.org/nx/assets/media/logos/logo-letter-9.png" alt="Nextpay Logo" width="96" height="125">
+  </a>
 <h1 align="center">Welcome to nextpay-kt 👋</h1>
+</p>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.2-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.3-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/falhad/nextpay-kt/wiki" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
@@ -13,15 +18,19 @@
   </a>
 </p>
 
-> Connect to  <a href="https://nextpay.ir" target="_blank">NextPay.ir</a> payment gateway in easy way.
+> Connect to  <a href="https://nextpay.ir" target="_blank">NextPay.ir</a> payment gateway from `Kotlin/Java` code base in easy way.
 
 ### 🏠 [Homepage](https://github.com/falhad/nextpay-kt)
 
 ## Setup
 
-### Kotlin KTS
+⚡ Replace `$nextpayKTVersion` with the latest version
+in [Maven Repository](https://mvnrepository.com/artifact/dev.falhad/nextpay)
+or [Maven Central](https://search.maven.org/search?q=dev.falhad).
 
-1- Add `mavenCentral()` to your `repositories` section of build.gradle.kts
+### Kotlin (build.gradle.kts)
+
+1- Add `mavenCentral()` to your `repositories` section of `build.gradle.kts` if not already exists.
 
 ```kotlin
 repositories {
@@ -33,13 +42,13 @@ repositories {
 
 ```kotlin
 dependencies {
-    implementation("dev.falhad:nextpay:1.0.2")
+    implementation("dev.falhad:nextpay:$nextpayKTVersion")
 }
 ```
 
 ### Groovy
 
-1- Add `maven()` to your `repositories` section of build.gradle.kts
+1- Add `maven()` to your `repositories` section of `build.gradle` if not already exists.
 
 ```groovy
 repositories {
@@ -51,7 +60,7 @@ repositories {
 
 ```groovy
 dependencies {
-    implementation 'dev.falhad:nextpay:1.0.2'
+    implementation 'dev.falhad:nextpay:$nextpayKTVersion'
 }
 ```
 
