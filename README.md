@@ -2,7 +2,7 @@
   <a href="https://nextpay.org/">
     <img src="https://nextpay.org/nx/assets/media/logos/logo-letter-9.png" alt="Nextpay Logo" width="96" height="125">
   </a>
-<h1 align="center">Welcome to nextpay-kt 👋</h1>
+  <h1 align="center">Welcome to nextpay-kt 👋</h1>
 </p>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.3-blue.svg?cacheSeconds=2592000" />
